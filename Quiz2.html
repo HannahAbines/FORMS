@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+<title>
+    Form
+</title>
+<style>
+    body{
+        background-color: #6995cf;
+    }
+    label{
+        color:#111d4a;
+    }
+    fieldset {
+        background-color: #f2f2f2;
+        border: 3px solid #ddd;
+        margin: 0 0 1em 0;
+        padding: 0.35em 0.625em 0.75em;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    legend{
+        color:#111d4a;
+        font-size: 20px;
+    }
+    
+
+</style>
+    </head>
+    <body>
+        <form>
+            <!--quiz-->
+            <fieldset>
+        <legend> PERSONAL INFORMATION</legend>
+        <br>
+        <br>
+         <label for="name">Name: </label>  
+         <input type="text" id="name" name="name" required>
+         <br>
+         <br>
+         <label for="email"> Email: </label>
+         <input type="text" id="email" name="email" required>
+         <br>
+         <br>
+         <label for="phone"> Phone: </label>
+         <input type="tel" id="phone" name="phone" required>
+         <br>
+         <br>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male"required>
+            <label for="male"> Male </label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female"required>
+            <label for="female"> Female </label>
+            <br>
+            <input type="radio" id="other" name="gender" value="other"required>
+            <label for="other"> Other </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="hobby" name="hobbies" value="reading">
+            <label for="hobby1"> Reading </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value="music">
+            <label for="hobby2"> Listening to Music </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value="sports">
+            <label for="hobby3"> Playing Sports </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value="painting">
+            <label for="hobby4"> Painting </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value="drawing">
+            <label for="hobby5"> Drawing or Sketching </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value="dancing">
+            <label for="hobby6"> Dancing </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value="playing">
+            <label for="hobby7"> Playing Video Games </label>
+            <br>
+            <input type="checkbox" id="hobby" name="hobbies" value=">
+            <label for="hobby8"> Watching Movies </label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Color</legend>
+            <select id="color" name="color" required>
+                <option value=""> Select a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend> Comments </legend>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Upload a file</legend>
+            <input type="file" id="file" name="file">
+        </fieldset>
+        <fieldset>
+            <legend> Date and Time </legend>
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="date">Time: </label>
+            <input type="time" id="time" name="time">
+        </fieldset>
+        <fieldset>
+            <legend> Numerical Control</legend>
+            <label for="quantity"> Quantity(between 1 and 10): </label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </fieldset>
+        <button type="submit">Submit</button>
+                </form>
+    </body>
+    
+</html>
